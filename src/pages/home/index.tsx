@@ -5,5 +5,5 @@ export default function Home() {
   const authState = useSelector(selectAuthState);
   console.log(authState);
 
-  return <div>About</div>;
+  return <div>Home</div>;
 }
