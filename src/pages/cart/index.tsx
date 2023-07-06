@@ -42,7 +42,7 @@ export default function Cart() {
       Cart<button onClick={handleGetProduct}>Fetching</button>
       <div>
         {products?.map((product) => {
-          return <div>{product.productId}</div>;
+          return <div key={product.productId}>{product.productId}</div>;
         })}
       </div>
     </div>
