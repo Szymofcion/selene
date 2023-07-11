@@ -1,0 +1,39 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "json-server",
+            "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet mattis vulputate enim nulla aliquet porttitor. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Arcu non sodales neque sodales ut. Nibh mauris cursus mattis molestie a",
+            "price_gross": 50.9,
+            "stock": 2
+        },
+        {
+            "id": 2,
+            "name": "json-server",
+            "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet mattis vulputate enim nulla aliquet porttitor. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Arcu non sodales neque sodales ut. Nibh mauris cursus mattis molestie a",
+            "price_gross": 50.9,
+            "stock": 2
+        },
+        {
+            "id": 3,
+            "name": "json-server",
+            "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet mattis vulputate enim nulla aliquet porttitor. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Arcu non sodales neque sodales ut. Nibh mauris cursus mattis molestie a",
+            "price_gross": 99.9,
+            "stock": 2
+        },
+        {
+            "id": 4,
+            "name": "json-server",
+            "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet mattis vulputate enim nulla aliquet porttitor. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Arcu non sodales neque sodales ut. Nibh mauris cursus mattis molestie a",
+            "price_gross": 42.9,
+            "stock": 2
+        },
+        {
+            "id": 5,
+            "name": "json-server",
+            "descriptiom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet mattis vulputate enim nulla aliquet porttitor. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Arcu non sodales neque sodales ut. Nibh mauris cursus mattis molestie a",
+            "price_gross": 99.9,
+            "stock": 2
+        }
+    ]
+}
