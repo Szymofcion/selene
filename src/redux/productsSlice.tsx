@@ -16,7 +16,7 @@ export const counterSlice = createSlice({
   reducers: {
     increment: (state) => {
       state.value += 1
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+     
       console.log(import.meta.env)
       
     },
