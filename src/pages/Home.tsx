@@ -1,29 +1,23 @@
-
-import { RootState } from "../store";
-import { useSelector, useDispatch } from "react-redux";
-import { decrement, increment } from "../redux/productsSlice";
-
+import { AppDispatch } from "../store";
+import { useDispatch, useSelector } from "react-redux";
+import { loadCartItems } from "../redux/actions/cartItemsAction";
+import { selectData } from "../redux/slices/cartItemsSlice";
 import "../App.css";
 
 function App() {
-  const count = useSelector((state: RootState) => state.counter.value);
-  const dispatch = useDispatch();
+  const dispatch: AppDispatch = useDispatch();
+  const { items } = useSelector(selectData);
   return (
     <>
       <div>
         <button
           aria-label="Increment value"
-          onClick={() => dispatch(increment())}
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+          onClick={() => dispatch(loadCartItems())}
         >
           Increment
         </button>
-        <span>{count}</span>
-        <button
-          aria-label="Decrement value"
-          onClick={() => dispatch(decrement())}
-        >
-          Decrement
-        </button>
+        <span>{items.toString()}</span>
       </div>
     </>
   );
