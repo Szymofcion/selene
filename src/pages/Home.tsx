@@ -7,6 +7,10 @@ import "../App.css";
 function App() {
   const dispatch: AppDispatch = useDispatch();
   const { items } = useSelector(selectData);
+  interface Item {
+    id: number;
+    description: string;
+  }
   return (
     <>
       <div>
@@ -17,7 +21,14 @@ function App() {
         >
           Increment
         </button>
-        <span>{items.toString()}</span>
+        <span>
+          {items.map((item: Item) => (
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
+            <div key={item.id}>
+              <span>{item.description}</span>
+            </div>
+          ))}
+        </span>
       </div>
     </>
   );

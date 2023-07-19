@@ -14,3 +14,18 @@ export const loadCartItems = (): AppThunk => async (dispatch) => {
       dispatch(loadCartItemsFailure(err));
     }
   };
+  export const removeItem =(): AppThunk=> async(dispatch)=>{
+
+   dispatch(loadCartItemsStart()); 
+  try{
+   // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+   await fetch(`${import.meta.env.VITE_APP_API_URL}/products`, {
+      method: 'DELETE',
+    });
+    
+  }
+  catch(err){
+    console.error(err)
+    
+  }
+}
