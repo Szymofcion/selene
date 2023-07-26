@@ -1,31 +1,31 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../../store";
 
-interface ICartItemsState {
+interface IListItemsState {
   items: any[];
   status: "idle" | "loading" | "succeeded" | "failed";
   error: string | null | any;
 }
 
-const initialState: ICartItemsState = {
+const initialState: IListItemsState = {
   items: [],
   status: "idle",
   error: null,
 };
 
-export const cartItemsSlice = createSlice({
-  name: "cartItems",
+export const listItemsSlice = createSlice({
+  name: "listItems",
   initialState,
   reducers: {
-    loadCartItemsStart: (state) => {
+    loadListItemsStart: (state) => {
       state.status = "loading";
       state.error = null;
     },
-    loadCartItemsSuccess: (state, action: PayloadAction<any[]>) => {
+    loadListItemsSuccess: (state, action: PayloadAction<any[]>) => {
       state.status = "succeeded";
       state.items = action.payload;
     },
-    loadCartItemsFailure: (state, action: PayloadAction<any>) => {
+    loadListItemsFailure: (state, action: PayloadAction<any>) => {
       state.status = "failed";
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       state.error = action.payload;
@@ -34,12 +34,12 @@ export const cartItemsSlice = createSlice({
 });
 
 export const {
-  loadCartItemsStart,
-  loadCartItemsSuccess,
-  loadCartItemsFailure,
-} = cartItemsSlice.actions;
+  loadListItemsStart,
+  loadListItemsSuccess,
+  loadListItemsFailure,
+} = listItemsSlice.actions;
 
-export const selectData = (state: RootState) => state.cartItems;
+// eslint-disable-next-line @typescript-eslint/no-unsafe-return
+export const selectData = (state: RootState) => state.listItems;
 
-export default cartItemsSlice.reducer;
-
+export default listItemsSlice.reducer;

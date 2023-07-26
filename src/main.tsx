@@ -1,15 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./pages/Home.tsx";
+import Home from "./pages/Home.tsx";
 import { store } from "./store.tsx";
 import { Provider } from "react-redux";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
+import Cart from "./pages/Cart.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
+    // errorElement: <Error404 />
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
     // errorElement: <Error404 />
   },
 ]);

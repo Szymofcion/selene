@@ -1,22 +1,20 @@
-import { selectData } from "../redux/slices/cartItemsSlice";
+import { selectData } from "../redux/slices/listItemSlice";
 import { AppDispatch } from "../store";
 import { useDispatch, useSelector } from "react-redux";
 
 import { loadCartItems } from "../redux/actions/cartItemsAction";
 
 import ListItem from "../components/ListItems";
-import "../App.css";
-const Home = () => {
+
+const Cart = () => {
   const { items } = useSelector(selectData);
   const dispatch: AppDispatch = useDispatch();
   return (
     <>
-      <div>
-        <button onClick={() => dispatch(loadCartItems())}>loadCartItems</button>
-        <ListItem items={items} />
-      </div>
+      <button onClick={() => dispatch(loadCartItems())}>loadListItems</button>
+      <ListItem items={items} />;
     </>
   );
 };
 
-export default Home;
+export default Cart;
