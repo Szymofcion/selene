@@ -33,6 +33,12 @@ export const cartItemsSlice = createSlice({
   },
 });
 
+
+
+
+
+
+
 export const {
   loadCartItemsStart,
   loadCartItemsSuccess,
@@ -42,3 +48,4 @@ export const {
 export const selectData = (state: RootState) => state.cartItems;
 
 export default cartItemsSlice.reducer;
+
